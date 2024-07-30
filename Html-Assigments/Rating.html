@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #1b1b1d;
+            font-family: Arial, sans-serif;
+        
+        }
+
+        .feedback-card {
+            background-color: #333845;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            width: 300px;
+            text-align: center;
+            color: #fff;
+        }
+
+        .feedback-card .icon {
+            background-color: #2e2f3e;
+            border-radius: 50%;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            margin-right:8px ;
+        }
+
+        .feedback-card .icon i {
+            color: #fc0000;
+        }
+
+        .feedback-card h2 {
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+
+        .feedback-card p {
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+
+        .rating {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            
+        }
+
+        .rating input {
+            display: none;
+        }
+
+        .rating label {
+            background-color: #2e2f3e;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .rating input:checked+label {
+            background-color: #555b6e;
+        }
+
+        .submit-btn {
+            background-color: #fc0000;
+            border: none;
+            border-radius: 5px;
+            color: #333;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: background-color 0.3s;
+            width: 100%;
+        }
+        h2{
+            text-align: start ;
+        }
+        p{
+            text-align: start ;
+            font-size:18px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="feedback-card">
+        <div class="icon">
+            <i class="fa fa-star" aria-hidden="true"></i>
+        </div>
+        <h2>How did we do?</h2>
+        <p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our
+            offering!</p>
+        <span class="rating">
+            <input type="radio" id="rate-1" name="rating" value="1">
+            <label for="rate-1">1</label>
+            <input type="radio" id="rate-2" name="rating" value="2">
+            <label for="rate-2">2</label>
+            <input type="radio" id="rate-3" name="rating" value="3">
+            <label for="rate-3">3</label>
+            <input type="radio" id="rate-4" name="rating" value="4">
+            <label for="rate-4">4</label>
+            <input type="radio" id="rate-5" name="rating" value="5">
+            <label for="rate-5">5</label>
+        </span>
+        <button class="submit-btn">SUBMIT</button>
+    </div>
+</body>
+
+</html>
